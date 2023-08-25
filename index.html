@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jQuery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Galeria de fotos</h1>
+    <button type="button">Nova imagem +</button>  <!--Esse botão acionará o novo formulário--> 
+  </header>
+  <form>
+    <h2>Inserir nova imagem</h2>
+    <input type="url" id="endereco-imagem-nova" placeholder="url da imagem" />  <!--O input ideal para se colocar endereços de sites é o input:url-->
+    <button type="submit">Adicionar</button>
+    <button type="reset" id="botao-cancelar">Cancelar</button>
+  </form>
+  <ul>
+    <li>
+      <img src="./images_M9/foto1.jpg" alt="Pintura de um gato" />
+      <div class="overlay-imagem-link ">
+        <a href="./images_M9/foto1.jpg" title="Ver imagem em tamanho real" target="_blank">Ver imagem em tamanho real</a>
+      </div>
+    </li>
+    <li>
+      <img src="./images_M9/foto2.jpg" alt="" />
+      <div class="overlay-imagem-link">
+        <a href="./images_M9/foto2.jpg" title="" target="_blank">Ver imagem em tamanho real</a>
+      </div>
+    </li>
+    <li>
+      <img src="./images_M9/foto3.jpg" alt="" />
+      <div class="overlay-imagem-link">
+        <a href="./images_M9/foto3.jpg" title="" target="_blank">Ver imagem em tamanho real</a>
+      </div>
+    </li>
+  </ul>
+  <script src="./code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="./script.js"></script> <!--Sempre colocamos o js abaixo do jquery no HTML-->
+</body>
+
+</html>
